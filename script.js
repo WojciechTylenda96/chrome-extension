@@ -1,4 +1,4 @@
 
-function btnClicked() {
+function saveLead() {
     console.log("Button clicked!")
 }
