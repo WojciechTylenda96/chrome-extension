@@ -1,8 +1,23 @@
+
 // variables and constants
 let myLeads = [];
 const inputBtn = document.getElementById("input-btn");
-const inputEl = document.getElementById("input-el")
+const inputEl = document.getElementById("input-el");
+const ulEl = document.getElementById("ul-el");
+
 
 inputBtn.addEventListener("click", function() {
-    console.log("Button clicked from addEventListener!")
+    myLeads.push(inputEl.value);
+    renderLeads();
 })
+
+function renderLeads() {
+    let listItems = ""
+    for (i = 0; i < myLeads.length; i++) {
+        listItems += "<li>" + myLeads[i] + "</li>"
+    }
+    ulEl.innerHTML = listItems;
+}
+
+
+
