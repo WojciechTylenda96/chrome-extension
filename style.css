@@ -11,6 +11,7 @@ input {
     padding: 10px;
     box-sizing: border-box;
     border: 1px solid #5f9341;
+    min-width: 400px;
 }
 
 button {
@@ -20,4 +21,17 @@ button {
     border: none;
     margin-top: 4px;
     padding: 8px 16px;
+}
+
+#ul-el {
+    list-style: none;
+    padding-left: 0;
+}
+
+#li-el {
+    margin-bottom: 4px;
+}
+
+#a-el {
+    color: #5f9341;
 }
