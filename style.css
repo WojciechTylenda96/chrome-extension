@@ -18,9 +18,14 @@ button {
     background: #5f9341;
     color: white;
     font-weight: bold;
-    border: none;
+    border: 1px solid #5f9341;
     margin-top: 4px;
     padding: 8px 16px;
+}
+
+#delete-btn {
+    background: white;
+    color: #5f9341;
 }
 
 #ul-el {
