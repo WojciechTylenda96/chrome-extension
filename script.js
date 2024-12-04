@@ -1,12 +1,10 @@
-
 // variables and constants
 let myLeads = [];
 const inputBtn = document.getElementById("input-btn");
 const inputEl = document.getElementById("input-el");
 const ulEl = document.getElementById("ul-el");
-let leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
-console.log(leadsFromLocalStorage)
-
+const deleteBtn = document.getElementById("delete-btn");
+const leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
 
 // functions
 inputBtn.addEventListener("click", function() {
@@ -15,6 +13,12 @@ inputBtn.addEventListener("click", function() {
     localStorage.setItem("myLeads", JSON.stringify(myLeads))
     renderLeads();
     console.log(localStorage.getItem("myLeads"))
+})
+
+deleteBtn.addEventListener("dblclick", function() {
+    localStorage.clear();
+    myLeads = [];
+    renderLeads();
 })
 
 function renderLeads() {
