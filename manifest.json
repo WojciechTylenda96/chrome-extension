@@ -5,5 +5,11 @@
     "name": "Leads tracker",
     "action": {
         "default_popup": "index.html"
+    },
+    "permissions": [
+    "tabs"
+    ],
+    "background": {
+        "service_worker": "scrip.js"
     }
 }
