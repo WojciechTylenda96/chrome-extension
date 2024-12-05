@@ -7,7 +7,6 @@ const deleteBtn = document.getElementById("delete-btn");
 const tabBtn = document.getElementById("tab-btn");
 const leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
 
-let url = window.location.href
 // functions
 inputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value);
