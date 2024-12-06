@@ -10,6 +10,6 @@
     "tabs"
     ],
     "background": {
-        "service_worker": "scrip.js"
+        "service_worker": "script.js"
     }
 }
